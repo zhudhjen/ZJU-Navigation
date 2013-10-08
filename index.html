@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv=Content-Type content="text/html;charset=utf-8">
+		<title>浙大导航</title>
+	</head>
+
+	<style type="text/css">
+		p 
+		{
+			font-family: "黑体";  /*帖子里的那个"ST Heiti"在我本地没有显示，不知道为什么*/
+			font-size: 14pt;
+			text-decoration: none;
+			text-align: center;
+			vertical-align: center;
+		}
+
+		.Content
+		{
+			color: black;
+			background: #F0F4FD; 
+			padding: 8px;
+		}
+
+		.ContentHover
+		{
+			color: black;
+			background: #ABBEEA; 
+			padding: 8px;
+		}
+
+		.ContentDown
+		{
+			color: #FFFFFF;
+			background: #23428A; 
+			padding: 8px; 
+		}
+
+		/*a {
+			text-decoration: none;
+			color: black;			
+		}*/
+
+		table.cTable 
+		{
+			width: 100%;
+			border: 2px solid #1240ab;
+			border-collapse: collapse;
+		}
+
+		.title 
+		{
+			font-weight: bold;	/*换了css3就用描边*/
+			text-align: left;
+			font-size: 42pt;
+			line-height: 0;
+		}
+
+		.subTitle 
+		{
+			font-family: "Verdana";
+			text-align: left;
+			color: #888888;
+			font-size: 18pt;
+			line-height: 0;
+		}
+
+		.colname 
+		{
+			font-size: 28pt;
+			color: white;
+			line-height: 0;
+		}
+	</style>
+
+	<body>
+		<table align=center border=0 width="1240px" cellpadding="0" cellspacing="20">
+		  <!--div定位真心不熟练，没来得及调试出来，先用table写了，马上改-->
+			<tr>
+				<td colspan=3>
+					<p class="title">浙大导航</p>
+					<p class="subTitle">Just another ZJU navigation</p>
+				</td>
+			</tr>
+			<tr>	<!--这一块如果用div就可以避免嵌套表格了，会优美很多，可惜没成功T T href="http://www.qsc.zju.edu.cn/index.php/category/new/"-->
+				<td width="400" align="middle">
+					<table class="cTable" bgcolor="#F0F4FD" cellpadding="5" cellspacing="0" frame="box">
+						<tr bgcolor="#1240ab">
+							<td colspan="3">
+								<p class="colname">新闻类</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="Content" onmouseover="this.className='ContentHover'" onmouseout="this.className='Content'" onmousedown="this.className='ContentDown'" onmouseup="this.className='ContentHover'" onclick="location='http://www.qsc.zju.edu.cn/index.php/category/new/'">								
+									<p>QSC新闻</p>
+								</div>
+							</td>
+							<td>
+								<div class="Content" onmouseover="this.className='ContentHover'" onmouseout="this.className='Content'" onmousedown="this.className='ContentDown'" onmouseup="this.className='ContentHover'" onclick="location='http://www.qsc.zju.edu.cn/index.php/category/new/'">								
+									<p>QSC新闻</p>
+								</div>
+								
+								<p>ZUPO</p>
+							</td>
+							<td>
+								<div class="Content" onmouseover="this.className='ContentHover'" onmouseout="this.className='Content'" onmousedown="this.className='ContentDown'" onmouseup="this.className='ContentHover'" onclick="location='http://www.qsc.zju.edu.cn/index.php/category/new/'">								
+									<p>教务网</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="Content" onmouseover="this.className='ContentHover'" onmouseout="this.className='Content'" onmousedown="this.className='ContentDown'" onmouseup="this.className='ContentHover'" onclick="location='http://www.qsc.zju.edu.cn/index.php/category/new/'">								
+									<p>云峰学园</p>
+								</div>
+							</td>
+							<td>
+								<div class="Content" onmouseover="this.className='ContentHover'" onmouseout="this.className='Content'" onmousedown="this.className='ContentDown'" onmouseup="this.className='ContentHover'" onclick="location='http://www.qsc.zju.edu.cn/index.php/category/new/'">								
+									<p>丹青学园</p>
+								</div>
+							</td>
+							<td>
+								<div class="Content" onmouseover="this.className='ContentHover'" onmouseout="this.className='Content'" onmousedown="this.className='ContentDown'" onmouseup="this.className='ContentHover'" onclick="location='http://www.qsc.zju.edu.cn/index.php/category/new/'">								
+									<p>蓝田学园</p>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</td>
+				<td width="400" align="middle">
+					blahblah
+				</td>				
+				<td width="400" align="middle">
+					blahblah
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
