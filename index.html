@@ -9,7 +9,7 @@
 		p 
 		{
 			font-family: "黑体";  /*帖子里的那个"ST Heiti"在我本地没有显示，不知道为什么*/
-			font-size: 14pt;
+			font-size: 12pt;
 			text-decoration: none;
 			text-align: center;
 			vertical-align: center;
@@ -20,6 +20,7 @@
 			color: black;
 			background: #F0F4FD; 
 			padding: 8px;
+			cursor: pointer;
 		}
 
 		.ContentHover
@@ -27,6 +28,7 @@
 			color: black;
 			background: #ABBEEA; 
 			padding: 8px;
+			cursor: pointer;
 		}
 
 		.ContentDown
@@ -34,6 +36,7 @@
 			color: #FFFFFF;
 			background: #23428A; 
 			padding: 8px; 
+			cursor: pointer;
 		}
 
 		/*a {
@@ -54,6 +57,7 @@
 			text-align: left;
 			font-size: 42pt;
 			line-height: 0;
+			cursor: default;
 		}
 
 		.subTitle 
@@ -63,13 +67,15 @@
 			color: #888888;
 			font-size: 18pt;
 			line-height: 0;
+			cursor: default;
 		}
 
 		.colname 
 		{
-			font-size: 28pt;
+			font-size: 20pt;
 			color: white;
 			line-height: 0;
+			cursor: default;
 		}
 	</style>
 
@@ -82,12 +88,12 @@
 					<p class="subTitle">Just another ZJU navigation</p>
 				</td>
 			</tr>
-			<tr>	<!--这一块如果用div就可以避免嵌套表格了，会优美很多，可惜没成功T T href="http://www.qsc.zju.edu.cn/index.php/category/new/"-->
+			<tr>	<!--这一块如果用div就可以避免嵌套表格了-->
 				<td width="400" align="middle">
 					<table class="cTable" bgcolor="#F0F4FD" cellpadding="5" cellspacing="0" frame="box">
 						<tr bgcolor="#1240ab">
 							<td colspan="3">
-								<p class="colname">新闻类</p>
+								<p class="colname">新闻资讯</p>
 							</td>
 						</tr>
 						<tr>
@@ -97,42 +103,128 @@
 								</div>
 							</td>
 							<td>
-								<div class="Content" onmouseover="this.className='ContentHover'" onmouseout="this.className='Content'" onmousedown="this.className='ContentDown'" onmouseup="this.className='ContentHover'" onclick="location='http://www.qsc.zju.edu.cn/index.php/category/new/'">								
-									<p>QSC新闻</p>
-								</div>
-								
-								<p>ZUPO</p>
+								<div class="Content" onmouseover="this.className='ContentHover'" onmouseout="this.className='Content'" onmousedown="this.className='ContentDown'" onmouseup="this.className='ContentHover'" onclick="location='http://zupo.zju.edu.cn/'">								
+									<p>ZUPO</p>
+								</div>								
 							</td>
 							<td>
-								<div class="Content" onmouseover="this.className='ContentHover'" onmouseout="this.className='Content'" onmousedown="this.className='ContentDown'" onmouseup="this.className='ContentHover'" onclick="location='http://www.qsc.zju.edu.cn/index.php/category/new/'">								
-									<p>教务网</p>
+								<div class="Content" onmouseover="this.className='ContentHover'" onmouseout="this.className='Content'" onmousedown="this.className='ContentDown'" onmouseup="this.className='ContentHover'" onclick="location=''">
+									<p>CC98</p>
 								</div>
 							</td>
 						</tr>
 						<tr>
 							<td>
-								<div class="Content" onmouseover="this.className='ContentHover'" onmouseout="this.className='Content'" onmousedown="this.className='ContentDown'" onmouseup="this.className='ContentHover'" onclick="location='http://www.qsc.zju.edu.cn/index.php/category/new/'">								
+								<div class="Content" onmouseover="this.className='ContentHover'" onmouseout="this.className='Content'" onmousedown="this.className='ContentDown'" onmouseup="this.className='ContentHover'" onclick="location='http://yunfeng.zju.edu.cn/'">
 									<p>云峰学园</p>
 								</div>
 							</td>
 							<td>
-								<div class="Content" onmouseover="this.className='ContentHover'" onmouseout="this.className='Content'" onmousedown="this.className='ContentDown'" onmouseup="this.className='ContentHover'" onclick="location='http://www.qsc.zju.edu.cn/index.php/category/new/'">								
+								<div class="Content" onmouseover="this.className='ContentHover'" onmouseout="this.className='Content'" onmousedown="this.className='ContentDown'" onmouseup="this.className='ContentHover'" onclick="location='http://dqxy.zju.edu.cn/'">
 									<p>丹青学园</p>
 								</div>
 							</td>
 							<td>
-								<div class="Content" onmouseover="this.className='ContentHover'" onmouseout="this.className='Content'" onmousedown="this.className='ContentDown'" onmouseup="this.className='ContentHover'" onclick="location='http://www.qsc.zju.edu.cn/index.php/category/new/'">								
+								<div class="Content" onmouseover="this.className='ContentHover'" onmouseout="this.className='Content'" onmousedown="this.className='ContentDown'" onmouseup="this.className='ContentHover'" onclick="location='http://lantian.zju.edu.cn/chinese/'">
 									<p>蓝田学园</p>
+								</div>
+							</td>
+						</tr>
+						<!--其实还有很多，现在只是做个样子，以后补全-->
+					</table>
+				</td>
+
+				<td width="400" align="middle">
+					<table class="cTable" bgcolor="#F0F4FD" cellpadding="5" cellspacing="0" frame="box">
+						<tr bgcolor="#1240ab">
+							<td colspan="3">
+								<p class="colname">实用工具</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="Content" onmouseover="this.className='ContentHover'" onmouseout="this.className='Content'" onmousedown="this.className='ContentDown'" onmouseup="this.className='ContentHover'" onclick="location='http://mail.zju.edu.cn'">
+									<p>ZJU邮箱</p>
+								</div>
+							</td>
+							<td>
+								<div class="Content" onmouseover="this.className='ContentHover'" onmouseout="this.className='Content'" onmousedown="this.className='ContentDown'" onmouseup="this.className='ContentHover'" onclick="location='http://ele.me/'">
+									<p>饿了吗</p>
+								</div>								
+							</td>
+							<td>
+								<div class="Content" onmouseover="this.className='ContentHover'" onmouseout="this.className='Content'" onmousedown="this.className='ContentDown'" onmouseup="this.className='ContentHover'" onclick="location='http://luckweb.057101.com/bt2/index.asp'">
+									<p>缘网BT</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="Content" onmouseover="this.className='ContentHover'" onmouseout="this.className='Content'" onmousedown="this.className='ContentDown'" onmouseup="this.className='ContentHover'" onclick="location='http://box.myqsc.com/'">
+									<p>求是潮 Box</p>
+								</div>
+							</td>
+							<td>
+								<div class="Content" onmouseover="this.className='ContentHover'" onmouseout="this.className='Content'" onmousedown="this.className='ContentDown'" onmouseup="this.className='ContentHover'" onclick="location='http://notice.myqsc.com/'">
+									<p>求是潮 Notice</p>
+								</div>
+							</td>
+							<td>
+								<div class="Content" onmouseover="this.className='ContentHover'" onmouseout="this.className='Content'" onmousedown="this.className='ContentDown'" onmouseup="this.className='ContentHover'" onclick="location='http://share.myqsc.com/'">
+									<p>求是潮 Share</p>
 								</div>
 							</td>
 						</tr>
 					</table>
 				</td>
+
 				<td width="400" align="middle">
-					blahblah
-				</td>				
-				<td width="400" align="middle">
-					blahblah
+										<table class="cTable" bgcolor="#F0F4FD" cellpadding="5" cellspacing="0" frame="box">
+						<tr bgcolor="#1240ab">
+							<td colspan="3">
+								<p class="colname">校园服务</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="Content" onmouseover="this.className='ContentHover'" onmouseout="this.className='Content'" onmousedown="this.className='ContentDown'" onmouseup="this.className='ContentHover'" onclick="location='http://jwbinfosys.zju.edu.cn/default2.aspx'">
+									<p>教务网</p>
+								</div>
+							</td>
+							<td>
+								<div class="Content" onmouseover="this.className='ContentHover'" onmouseout="this.className='Content'" onmousedown="this.className='ContentDown'" onmouseup="this.className='ContentHover'" onclick="location='http://myvpn.zju.edu.cn/'">
+									<p>VPN自助中心</p>
+								</div>								
+							</td>
+							<td>
+								<div class="Content" onmouseover="this.className='ContentHover'" onmouseout="this.className='Content'" onmousedown="this.className='ContentDown'" onmouseup="this.className='ContentHover'" onclick="location='http://ipv6.zju.edu.cn/'">
+									<p>IPv6</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="Content" onmouseover="this.className='ContentHover'" onmouseout="this.className='Content'" onmousedown="this.className='ContentDown'" onmouseup="this.className='ContentHover'" onclick="location='http://elife.zju.edu.cn/'">
+									<p>电子服务平台</p>
+								</div>
+							</td>
+							<td>
+								<div class="Content" onmouseover="this.className='ContentHover'" onmouseout="this.className='Content'" onmousedown="this.className='ContentDown'" onmouseup="this.className='ContentHover'" onclick="location='http://zuaa.zju.edu.cn/'">
+									<p>浙大校友</p>
+								</div>
+							</td>
+							<td>
+								<div class="Content" onmouseover="this.className='ContentHover'" onmouseout="this.className='Content'" onmousedown="this.className='ContentDown'" onmouseup="this.className='ContentHover'" onclick="location='http://libweb.zju.edu.cn/libweb/'">
+									<p>浙大图书馆</p>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<p class="subTitle">TO BE CONTINUED...</p>
 				</td>
 			</tr>
 		</table>
